@@ -141,9 +141,6 @@ def snakeLogic():
         placeholder.place(x=50, y=650)
         square = 1
 
-
-
-
 def snakeLadder():
     #Global Variables
     global square
@@ -152,9 +149,7 @@ def snakeLadder():
     global game
     global diceLabel
 
-
     #Snakes and Ladders game screen
-
     menu.destroy()
     game = Tk()
     game.title("Pokemon Snakes and Ladders")
@@ -165,7 +160,6 @@ def snakeLadder():
     board = PhotoImage(file='board.png')
     snakeBoard = Label(game, image=board)
     snakeBoard.place(x=0, y=0)
-
 
     dices = PhotoImage(file='dice.png')
     
@@ -189,17 +183,12 @@ def snakeLadder():
     diceLabel.place(x=770,y=400)
     diceLabel.config(font=("Courier", 15))
 
-
     pokemooon=PhotoImage(file='groudon.png')
     pokeDude = Label(game, image=pokemooon)
     pokeDude.place(x=860, y=645)
 
-
-
     game.mainloop()
-
-    
-    
+  
 
 #Functon that triggers new screen to
 def moves1():
@@ -236,11 +225,6 @@ def moves1():
         stadium.destroy()
         messagebox.showinfo('HAHA LOSER', 'YOU LOST, Please Open the Application and Play Again')
 
-    #***THESE COMMENTS APPLY TO ALL 4 MOVES FUNCTIONS***
-    
-
-        
-    
 
 def moves2():
     #Globals
@@ -296,7 +280,6 @@ def moves3():
 
 
                                 
-        
 def moves4():
     #Globals
     global oppRealhp
@@ -431,8 +414,6 @@ def game1():
 
     move4 = Button(stadium, text="Muddy Water", command = moves4)
     move4.place(x=82, y=300)
-
-
 
 
     stadium.mainloop()
@@ -692,7 +673,6 @@ def helping():
     global instructions
     global menu
     
-
     menu.destroy()
 
     #Instructions screen
@@ -724,7 +704,6 @@ def helping():
     titler = PhotoImage(file='instructions.png')
     titleText = Label(instructions, image = titler)
     titleText.place(x=412, y=0)
-
 
     instructions.mainloop()
 
@@ -789,9 +768,7 @@ def pokeLists():
     grassImage = Label(poke, image=grassPic)
     grassImage.place(x=670, y=300)
 
-
     poke.mainloop()
-
 
 def back2():
     #Global variable
@@ -849,10 +826,7 @@ def play():
     snakeGame = PhotoImage(file='snake.png')
     snake = Button(menu, image = snakeGame, command = snakeLadder)
     snake.place(x=335, y=450)
-    
-
-
-    
+  
 
     menu.mainloop()
 
